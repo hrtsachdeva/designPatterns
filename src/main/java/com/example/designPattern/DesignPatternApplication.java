@@ -1,5 +1,6 @@
 package com.example.designPattern;
 
+import com.example.designPattern.decorator.DecoratorDriver;
 import com.example.designPattern.observer.ObserverDriver;
 import com.example.designPattern.strategy.StrategyDriverClass;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,6 +19,9 @@ public class DesignPatternApplication {
 		System.out.println("------ Observer Design Pattern ------");
 		ObserverDriver obsD = new ObserverDriver();
 		obsD.execute();
+		System.out.println("------ Decorator Design Pattern ------");
+		DecoratorDriver decoratorDriver = new DecoratorDriver();
+		decoratorDriver.execute();
 	}
 
 }
