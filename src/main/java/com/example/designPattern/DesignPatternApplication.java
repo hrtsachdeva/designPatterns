@@ -1,5 +1,6 @@
 package com.example.designPattern;
 
+import com.example.designPattern.chainOfResponsibility.ChainOfResponsibilityDriver;
 import com.example.designPattern.decorator.DecoratorDriver;
 import com.example.designPattern.factory.FactoryDriver;
 import com.example.designPattern.observer.ObserverDriver;
@@ -28,6 +29,10 @@ public class DesignPatternApplication {
 		System.out.println("------ Factory Design Pattern ------");
 		FactoryDriver factoryDriver = new FactoryDriver();
 		factoryDriver.execute();
+
+		System.out.println("------ Chain of Responsibility------");
+		ChainOfResponsibilityDriver chainOfResponsibilityDriver = new ChainOfResponsibilityDriver();
+		chainOfResponsibilityDriver.execute();
 	}
 
 }
