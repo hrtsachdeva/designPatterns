@@ -5,6 +5,8 @@ import com.example.designPattern.adapter.AdapterDriver;
 import com.example.designPattern.chainOfResponsibility.ChainOfResponsibilityDriver;
 import com.example.designPattern.decorator.DecoratorDriver;
 import com.example.designPattern.factory.FactoryDriver;
+import com.example.designPattern.flyweight.CharacterFactory;
+import com.example.designPattern.flyweight.FlyweightDriver;
 import com.example.designPattern.observer.ObserverDriver;
 import com.example.designPattern.proxy.ProxyDriver;
 import com.example.designPattern.strategy.StrategyDriverClass;
@@ -48,6 +50,10 @@ public class DesignPatternApplication {
 		System.out.println("------ Clone -----");
 		PrototypeDriver prototypeDriver = new PrototypeDriver();
 		prototypeDriver.execute();
+
+		System.out.println("------ FlyWeight -----");
+		FlyweightDriver flyweightDriver = new FlyweightDriver();
+		flyweightDriver.execute();
 	}
 
 }
