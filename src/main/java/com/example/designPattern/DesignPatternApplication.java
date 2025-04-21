@@ -3,6 +3,7 @@ package com.example.designPattern;
 import com.example.designPattern.Prototype.PrototypeDriver;
 import com.example.designPattern.adapter.AdapterDriver;
 import com.example.designPattern.chainOfResponsibility.ChainOfResponsibilityDriver;
+import com.example.designPattern.command.CommandDriver;
 import com.example.designPattern.decorator.DecoratorDriver;
 import com.example.designPattern.factory.FactoryDriver;
 import com.example.designPattern.flyweight.CharacterFactory;
@@ -54,6 +55,10 @@ public class DesignPatternApplication {
 		System.out.println("------ FlyWeight -----");
 		FlyweightDriver flyweightDriver = new FlyweightDriver();
 		flyweightDriver.execute();
+
+		System.out.println("------ Command -----");
+		CommandDriver commandDriver = new CommandDriver();
+		commandDriver.execute();
 	}
 
 }
