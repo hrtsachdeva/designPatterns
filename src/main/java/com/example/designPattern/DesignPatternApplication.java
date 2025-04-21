@@ -1,9 +1,11 @@
 package com.example.designPattern;
 
+import com.example.designPattern.adapter.AdapterDriver;
 import com.example.designPattern.chainOfResponsibility.ChainOfResponsibilityDriver;
 import com.example.designPattern.decorator.DecoratorDriver;
 import com.example.designPattern.factory.FactoryDriver;
 import com.example.designPattern.observer.ObserverDriver;
+import com.example.designPattern.proxy.ProxyDriver;
 import com.example.designPattern.strategy.StrategyDriverClass;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -33,6 +35,14 @@ public class DesignPatternApplication {
 		System.out.println("------ Chain of Responsibility------");
 		ChainOfResponsibilityDriver chainOfResponsibilityDriver = new ChainOfResponsibilityDriver();
 		chainOfResponsibilityDriver.execute();
+
+		System.out.println("------ Proxy -----");
+		ProxyDriver proxyDriver = new ProxyDriver();
+		proxyDriver.execute();
+
+		System.out.println("------ Adapter -----");
+		AdapterDriver adapterDriver = new AdapterDriver();
+		adapterDriver.execute();
 	}
 
 }
