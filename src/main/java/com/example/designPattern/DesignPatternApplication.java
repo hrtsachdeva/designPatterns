@@ -1,5 +1,6 @@
 package com.example.designPattern;
 
+import com.example.designPattern.Prototype.PrototypeDriver;
 import com.example.designPattern.adapter.AdapterDriver;
 import com.example.designPattern.chainOfResponsibility.ChainOfResponsibilityDriver;
 import com.example.designPattern.decorator.DecoratorDriver;
@@ -43,6 +44,10 @@ public class DesignPatternApplication {
 		System.out.println("------ Adapter -----");
 		AdapterDriver adapterDriver = new AdapterDriver();
 		adapterDriver.execute();
+
+		System.out.println("------ Clone -----");
+		PrototypeDriver prototypeDriver = new PrototypeDriver();
+		prototypeDriver.execute();
 	}
 
 }
