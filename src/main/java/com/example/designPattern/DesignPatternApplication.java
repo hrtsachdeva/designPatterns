@@ -8,6 +8,7 @@ import com.example.designPattern.decorator.DecoratorDriver;
 import com.example.designPattern.factory.FactoryDriver;
 import com.example.designPattern.flyweight.CharacterFactory;
 import com.example.designPattern.flyweight.FlyweightDriver;
+import com.example.designPattern.itegtrator.ItetratorDriver;
 import com.example.designPattern.observer.ObserverDriver;
 import com.example.designPattern.proxy.ProxyDriver;
 import com.example.designPattern.strategy.StrategyDriverClass;
@@ -59,6 +60,10 @@ public class DesignPatternApplication {
 		System.out.println("------ Command -----");
 		CommandDriver commandDriver = new CommandDriver();
 		commandDriver.execute();
+
+		System.out.println("------ Itetrator -----");
+		ItetratorDriver itetratorDriver = new ItetratorDriver();
+		itetratorDriver.execute();
 	}
 
 }
