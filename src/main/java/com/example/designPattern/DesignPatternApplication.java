@@ -10,6 +10,7 @@ import com.example.designPattern.factory.FactoryDriver;
 import com.example.designPattern.flyweight.CharacterFactory;
 import com.example.designPattern.flyweight.FlyweightDriver;
 import com.example.designPattern.itegtrator.ItetratorDriver;
+import com.example.designPattern.mediator.MediatorDriver;
 import com.example.designPattern.observer.ObserverDriver;
 import com.example.designPattern.proxy.ProxyDriver;
 import com.example.designPattern.strategy.StrategyDriverClass;
@@ -69,6 +70,10 @@ public class DesignPatternApplication {
 		System.out.println("------ Composite -----");
 		CompositeDriver compositeDriver = new CompositeDriver();
 		compositeDriver.execute();
+
+		System.out.println("------ Mediator -----");
+		MediatorDriver mediatorDriver = new MediatorDriver();
+		mediatorDriver.execute();
 	}
 
 }
