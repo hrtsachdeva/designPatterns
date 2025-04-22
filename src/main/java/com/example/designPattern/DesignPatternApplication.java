@@ -14,6 +14,8 @@ import com.example.designPattern.mediator.MediatorDriver;
 import com.example.designPattern.observer.ObserverDriver;
 import com.example.designPattern.proxy.ProxyDriver;
 import com.example.designPattern.strategy.StrategyDriverClass;
+import com.example.designPattern.visitor.Visitor;
+import com.example.designPattern.visitor.VisitorDriver;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
@@ -74,6 +76,12 @@ public class DesignPatternApplication {
 		System.out.println("------ Mediator -----");
 		MediatorDriver mediatorDriver = new MediatorDriver();
 		mediatorDriver.execute();
+
+		System.out.println("------ Visitor -----");
+		VisitorDriver visitorDriver = new VisitorDriver();
+		visitorDriver.execute();
+
+
 	}
 
 }
