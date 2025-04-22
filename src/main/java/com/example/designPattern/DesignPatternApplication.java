@@ -15,6 +15,7 @@ import com.example.designPattern.memento.MementoDriver;
 import com.example.designPattern.observer.ObserverDriver;
 import com.example.designPattern.proxy.ProxyDriver;
 import com.example.designPattern.strategy.StrategyDriverClass;
+import com.example.designPattern.template.TemplateDriver;
 import com.example.designPattern.visitor.Visitor;
 import com.example.designPattern.visitor.VisitorDriver;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -85,6 +86,10 @@ public class DesignPatternApplication {
 		System.out.println("------ Memenot -----");
 		MementoDriver mementoDriver = new MementoDriver();
 		mementoDriver.execute();
+
+		System.out.println("------ Template -----");
+		TemplateDriver templateDriver = new TemplateDriver();
+		templateDriver.execute();
 
 
 	}
