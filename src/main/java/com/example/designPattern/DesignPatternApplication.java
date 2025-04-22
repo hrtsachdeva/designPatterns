@@ -4,6 +4,7 @@ import com.example.designPattern.Prototype.PrototypeDriver;
 import com.example.designPattern.adapter.AdapterDriver;
 import com.example.designPattern.chainOfResponsibility.ChainOfResponsibilityDriver;
 import com.example.designPattern.command.CommandDriver;
+import com.example.designPattern.composite.CompositeDriver;
 import com.example.designPattern.decorator.DecoratorDriver;
 import com.example.designPattern.factory.FactoryDriver;
 import com.example.designPattern.flyweight.CharacterFactory;
@@ -64,6 +65,10 @@ public class DesignPatternApplication {
 		System.out.println("------ Itetrator -----");
 		ItetratorDriver itetratorDriver = new ItetratorDriver();
 		itetratorDriver.execute();
+
+		System.out.println("------ Composite -----");
+		CompositeDriver compositeDriver = new CompositeDriver();
+		compositeDriver.execute();
 	}
 
 }
